@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad0253b_5ebe6400",
+        "filename": "ansible-role-thales-hsm.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-10T07:56:55Z",
+      "side": 1,
+      "message": "should also convert spec to py3 only for Fedora/RHEL \u003e 7 as stated  in https://review.rdoproject.org/etherpad/p/py3_conversion_status, ex: https://review.rdoproject.org/r/#/c/17876/2/ansible-role-redhat-subscription.spec",
+      "revId": "103684501be6d6e838c6c91d5776701eae9d2d55",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_1e822c53",
+        "filename": "ansible-role-thales-hsm.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-10T07:56:55Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 7,
+        "startChar": 16,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "103684501be6d6e838c6c91d5776701eae9d2d55",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_3eb6083e",
+        "filename": "ansible-role-thales-hsm.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-10T07:56:55Z",
+      "side": 1,
+      "message": "DLRN Substitutes these, so replace with XXX",
+      "range": {
+        "startLine": 8,
+        "startChar": 16,
+        "endLine": 8,
+        "endChar": 17
+      },
+      "revId": "103684501be6d6e838c6c91d5776701eae9d2d55",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
