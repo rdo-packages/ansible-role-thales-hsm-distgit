@@ -20,8 +20,8 @@ Summary:        Ansible role for configuring Thales HSM Clients
 
 Group:          System Environment/Base
 License:        ASL 2.0
-URL:            https://github.com/dmend/ansible-role-thales-hsm
-Source0:        https://github.com/dmend/ansible-role-thales-hsm/archive/v0.2.0.tar.gz
+URL:            https://git.openstack.org/cgit/openstack/ansible-role-thales-hsm
+Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
