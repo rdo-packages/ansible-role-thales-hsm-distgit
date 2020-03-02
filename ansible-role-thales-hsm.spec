@@ -4,9 +4,9 @@
 %else
 %global pyver 2
 %endif
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
+%global pyver_sitelib %{expand:%{python%{pyver}_sitelib}}
+%global pyver_install %{expand:%{py%{pyver}_install}}
+%global pyver_build %{expand:%{py%{pyver}_build}}
 # End of macros for py2/py3 compatibility
 %global srcname ansible_role_thales_hsm
 %global rolename ansible-role-thales-hsm
@@ -14,14 +14,14 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        0.2.0
+Release:        1%{?dist}
 Summary:        Ansible role for configuring Thales HSM Clients
 
 Group:          System Environment/Base
 License:        ASL 2.0
-URL:            https://git.openstack.org/cgit/openstack/ansible-role-thales-hsm
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+URL:            https://opendev.org/openstack/ansible-role-thales-hsm
+Source0:        https://github.com/openstack/%{rolename}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
@@ -62,3 +62,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Mon Apr 22 2019 RDO <dev@lists.rdoproject.org> 0.2.0-1
+- Update to 0.2.0
+
