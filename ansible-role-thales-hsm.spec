@@ -14,7 +14,7 @@ URL:            https://git.openstack.org/cgit/openstack/ansible-role-thales-hsm
 Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
