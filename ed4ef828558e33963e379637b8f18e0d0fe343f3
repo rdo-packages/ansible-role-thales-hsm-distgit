@@ -1,0 +1,8 @@
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 15 Mar 2024 15:22:19 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/ansible-role-thales-hsm-distgit/+/52304
+Project: openstack/ansible-role-thales-hsm-distgit
+Branch: refs/heads/caracal-rdo
