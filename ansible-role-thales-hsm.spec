@@ -1,4 +1,3 @@
-%global milestone .0rc1
 %global srcname ansible_role_thales_hsm
 %global rolename ansible-role-thales-hsm
 
@@ -6,7 +5,7 @@
 
 Name:           %{rolename}
 Version:        7.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        Ansible role for configuring Thales HSM Clients
 
 Group:          System Environment/Base
@@ -14,8 +13,6 @@ License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-thales-hsm
 Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
-#
-# patches_base=7.0.0.0rc1
 #
 
 BuildArch:      noarch
@@ -54,6 +51,9 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Wed Apr 03 2024 RDO <dev@lists.rdoproject.org> 7.0.0-1
+- Update to 7.0.0
+
 * Fri Mar 15 2024 RDO <dev@lists.rdoproject.org> 7.0.0-0.1.0rc1
 - Update to 7.0.0.0rc1
 
