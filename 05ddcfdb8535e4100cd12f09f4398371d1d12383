@@ -16,6 +16,23 @@
       "message": "tarball not yet available https://tarballs.opendev.org/openstack/ansible-role-thales-hsm/ansible-role-thales-hsm-8.0.0.0rc1.tar.gz",
       "revId": "05ddcfdb8535e4100cd12f09f4398371d1d12383",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ee4cb75_cc0198bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-09-25T13:19:10Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "05ddcfdb8535e4100cd12f09f4398371d1d12383",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
