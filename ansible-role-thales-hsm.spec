@@ -1,17 +1,22 @@
+%global milestone .0rc1
 %global srcname ansible_role_thales_hsm
 %global rolename ansible-role-thales-hsm
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        9.0.0
+Release:        0.1%{?milestone}%{?dist}
 Summary:        Ansible role for configuring Thales HSM Clients
 
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-thales-hsm
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{rolename}/%{srcname}-%{upstream_version}.tar.gz
+
+#
+# patches_base=9.0.0.0rc1
+#
 
 BuildArch:      noarch
 BuildRequires:  git-core
@@ -26,7 +31,7 @@ Requires: (python3dist(ansible) or ansible-core >= 2.11)
 Ansible role to configure Thales HSM clients
 
 %prep
-%autosetup -n %{rolename}-%{upstream_version} -S git
+%autosetup -n %{srcname}-%{upstream_version} -S git
 #Remove ansible from requirements.txt as dependency on ansible is managed manually
 sed -i '/^ansible/d' requirements.txt
 
@@ -49,4 +54,7 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Fri Mar 14 2025 RDO <dev@lists.rdoproject.org> 9.0.0-0.1.0rc1
+- Update to 9.0.0.0rc1
+
 
